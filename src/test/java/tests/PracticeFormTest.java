@@ -37,9 +37,9 @@ public class PracticeFormTest {
         $("#uploadPicture").uploadFromClasspath("photo_1.png");
         $("#currentAddress").setValue("Moscow, Some-street, 19");
         $("#state").click();
-        $(byText("Haryana")).click();
+        $("#state").$(byText("Haryana")).click();
         $("#city").click();
-        $(byText("Karnal")).click();
+        $("#city").$(byText("Karnal")).click();
         $("#submit").click();
 
 
