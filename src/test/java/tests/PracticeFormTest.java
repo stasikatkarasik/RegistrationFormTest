@@ -31,9 +31,9 @@ public class PracticeFormTest {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("January");
         $(".react-datepicker__year-select").selectOption("2001");
-        $(by("aria-label","Choose Monday, January 15th, 2001")).click();
+        $(".react-datepicker__month").$(byText("15")).click();
         $("#subjectsInput").setValue("English").pressEnter();
-        $(byText("Music")).click();
+        $("#hobbiesWrapper").$(byText("Music")).click();
         $("#uploadPicture").uploadFromClasspath("photo_1.png");
         $("#currentAddress").setValue("Moscow, Some-street, 19");
         $("#state").click();
